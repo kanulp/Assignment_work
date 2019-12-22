@@ -1,0 +1,12 @@
+D:\Users\Sri\ODTU\OD\COIS 2020H FA 2019\MinHeapForLab\MinHeap\ConsoleApp1\bin\Debug\MinHeapLab.exe.config
+D:\Users\Sri\ODTU\OD\COIS 2020H FA 2019\MinHeapForLab\MinHeap\ConsoleApp1\bin\Debug\MinHeapLab.exe
+D:\Users\Sri\ODTU\OD\COIS 2020H FA 2019\MinHeapForLab\MinHeap\ConsoleApp1\bin\Debug\MinHeapLab.pdb
+D:\Users\Sri\ODTU\OD\COIS 2020H FA 2019\MinHeapForLab\MinHeap\ConsoleApp1\obj\Debug\MinHeapLab.exe
+D:\Users\Sri\ODTU\OD\COIS 2020H FA 2019\MinHeapForLab\MinHeap\ConsoleApp1\obj\Debug\MinHeapLab.pdb
+D:\Users\Sri\ODTU\OD\COIS 2020H FA 2019\MinHeapForLab\MinHeap\ConsoleApp1\obj\Debug\MinHeapLab.csprojAssemblyReference.cache
+C:\Users\slim_\Documents\Lecture 7Lab7\MinHeapForLab\MinHeap\ConsoleApp1\obj\Debug\MinHeapLab.csprojAssemblyReference.cache
+C:\Users\slim_\Documents\Lecture 7Lab7\MinHeapForLab\MinHeap\ConsoleApp1\obj\Debug\MinHeapLab.exe
+C:\Users\slim_\Documents\Lecture 7Lab7\MinHeapForLab\MinHeap\ConsoleApp1\obj\Debug\MinHeapLab.pdb
+C:\Users\slim_\Documents\Lecture 7Lab7\MinHeapForLab\MinHeap\ConsoleApp1\bin\Debug\MinHeapLab.exe.config
+C:\Users\slim_\Documents\Lecture 7Lab7\MinHeapForLab\MinHeap\ConsoleApp1\bin\Debug\MinHeapLab.exe
+C:\Users\slim_\Documents\Lecture 7Lab7\MinHeapForLab\MinHeap\ConsoleApp1\bin\Debug\MinHeapLab.pdb
