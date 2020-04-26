@@ -1,0 +1,119 @@
+h1 {
+    color: yellow;
+}
+
+.header {
+    text-align: center;
+    background: #074E68;
+    background-size: cover;
+    position: relative;
+    overflow: visible;
+    padding-top: 2.5rem;
+    padding-bottom: 4.9rem;
+}
+
+    .header .headline {
+        color: red;
+    }
+
+.header-subnav {
+    float: none;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 0;
+    width: 100%;
+}
+
+    .header-subnav li {
+        float: none;
+        display: inline-block;
+    }
+
+        .header-subnav li a {
+            padding: 0.9rem 1rem;
+            font-size: 0.75rem;
+            color: #ffe;
+            text-transform: uppercase;
+            display: block;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.35s ease-in-out;
+        }
+
+            .header-subnav li a.is-active {
+                background: rgba(50, 50, 50, 0.15);
+            }
+
+            .header-subnav li a:hover {
+                background: rgba(50, 50, 50, 0.15);
+                transition: all 0.35s ease-in-out;
+            }
+
+
+#map {
+    height: 400px;
+    background-color: white;
+    padding: 0.5rem;
+    border: solid 1px #666666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+#LocationList {
+    height: 500px;
+}
+
+
+body {
+    background: url(../image_files/background2.jpg) no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.reveal-modal {
+    border-radius: 3px;
+    display: none;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1005;
+    background-color: #FFFFFF;
+    padding: 0.5rem;
+    border: solid 1px #666666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -250px;
+}
+
+@media only screen and (min-width: 40.0625em) {
+    .reveal-modal {
+        left: 0;
+        margin: 0 auto;
+        max-width: 62.5rem;
+        right: 0;
+        width: 40%;
+    }
+}
+
+#modal-color-palette {
+    clear: both;
+    width: 100px;
+}
+
+.color-button {
+    width: 14px;
+    height: 14px;
+    font-size: 0;
+    margin: 2px;
+    float: left;
+    cursor: pointer;
+}
+
+#delete-button {
+    margin-top: 5px;
+}

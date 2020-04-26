@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>COMP1231 Assignment Two Winter 2020</title>
+    <script>
+        /* replace Your_STUDENT_ID with your 9 digits student ID */
+        const STUDENT_ID = '101233723';
+        /* replace YourFunctionName with the name of your function */
+        var myFunctions = {
+            'step1': 'q1',
+            'step2': 'q2',
+            'step3': 'q3',
+            'step4': 'q4',
+            'step5': 'q5',
+            'step6': 'q6',
+            'step7': 'q7',
+            'step8': 'q8',
+            'step9': 'q9',
+            'step10': 'q10'
+        }
+    </script>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://my.gblearn.com/js/comp1231/w20/w20a2tester.js"></script>
+    <script type="text/javascript" src="101233723-functions.js"></script>
+    <style scoped="">
+        #msgBox pre {
+            border: 4px solid red;
+            padding: 10px;
+            background-color: #d8c6c6;
+            position: relative;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        
+        #msgBox pre b.title {
+            position: absolute;
+            left: 20px;
+            top: -10px;
+            animation: error 5s 3;
+            background-color: #d8c6c6;
+            border: 1px solid red;
+        }
+        
+        .step b.title {
+            position: absolute;
+            left: 20px;
+            top: -10px;
+            animation: question 5s 1;
+            background-color: #28bcff;
+            border: 1px solid rgba(36, 255, 163, 0.11);
+            border-radius: 10px;
+            padding: 2px 5px;
+        }
+        
+        @keyframes eror {
+            0% {
+                left: 20px;
+            }
+            25% {
+                left: 50px;
+            }
+            75% {
+                left: 100px;
+                font-size: 22pt
+            }
+            100% {
+                left: 20px;
+            }
+        }
+        
+        @keyframes question {
+            0% {
+                left: 20px;
+            }
+            25% {
+                left: 250px;
+            }
+            75% {
+                left: 500px;
+            }
+            100% {
+                left: 20px;
+            }
+        }
+        
+        .error {
+            color: red;
+        }
+        
+        .step {
+            border: 4px solid #28bcff;
+            padding: 20px;
+            background-color: rgba(36, 255, 163, 0.11);
+            position: relative;
+            margin-top: 10px;
+            width: 95%;
+            margin: 10px auto;
+        }
+        
+        div#wrapper section#panel1 span,
+        div#wrapper section#panel2 span {
+            border: 2px dodgerblue dotted;
+            display: block;
+            background-color: #4d90fe;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            margin: 5px;
+            ;
+        }
+        
+        .buffer {
+            padding-left: 20px;
+            background-color: #ccff00;
+        }
+        
+        #wrapper {
+            width: 95%;
+            margin: 0 auto;
+            border: 1px solid #4d90fe;
+            background-color: #4d90fe;
+            font-family: 'courier new';
+            font-size: 10pt;
+        }
+        
+        #panel1 {}
+        
+        #panel1 #msgBox {
+            border: 1px solid #fff;
+            /* height: 400px;*/
+            margin: 5px;
+            overflow: auto;
+            background-color: white;
+        }
+        
+        #panel2 {}
+        
+        #status {
+            cursor: pointer;
+        }
+        
+        #panel2 div {
+            border: 1px solid #fff;
+            margin: 5px;
+            height: 300px;
+            overflow: auto;
+            background-color: #7b7979;
+            color: white;
+        }
+        
+        #result123 {
+            display: inline-block;
+            position: fixed;
+            right: 20px;
+            bottom: 0px;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border: 4px solid #357ae8;
+            z-index: 1000;
+            font-size: 8pt;
+        }
+        
+        li.child {
+            list-style-type: none;
+        }
+        
+        .testConsole {
+            background-color: red;
+        }
+    </style>
+    <div id="wrapper">
+        <section id="panel1">
+            <span>Console</span>
+            <div id="result123"></div>
+            <div id="msgBox"><pre><b class="title">Error</b>https://my.gblearn.com/js/comp1231/w20/w20a2tester.js:206:28
+https://my.gblearn.com/js/comp1231/w20/w20a2tester.js:200:30
+global code@https://my.gblearn.com/js/comp1231/w20/w20a2tester.js:279:10</pre></div>
+        </section>
+        <section id="panel2">
+            <span>Assignment Description <b id="status">[Hide]</b></span>
+            <div id="buffer"></div>
+        </section>
+
+    </div>
+
+    <div style="width:70%;margin:0px auto">
+        <h1>Except your student id and your function name don't change any other element or file.</h1>
+        <pre>                        1. Replace "Your_STUDENT_ID" string with your 9 digits student ID //const STUDENT_ID = 'Your_STUDENT_ID';
+                        2. Replace "YourFunctionName" string with the name of your function
+                        var myFunctions = {
+                        'step1': 'q1()',
+                        'step2': 'YourFunctionName',
+                        'step3': 'YourFunctionName',
+                        'step4': 'YourFunctionName',
+                        'step5': 'YourFunctionName',
+                        'step6': 'YourFunctionName',
+                        'step7': 'YourFunctionName',
+                        'step8': 'YourFunctionName',
+                        'step9': 'YourFunctionName',
+                        'step10' : 'YourFunctionName'
+                        }
+                        if you have not created the step's function, please leave the current value as is.
+                        3. Make sure all your functions are in Your_Student_id-<b>functions.js</b> and is in the same directory as main.html. The tester script will automatically load your js file.
+                        4. Check your function for any syntax error before using the tester script. Any error caused by your function will stop the tester script.
+                        </pre>
+    </div>
+    <div style="background:yellow;height:300px;width:2px"></div>
+
+
+</body>
+
+</html>

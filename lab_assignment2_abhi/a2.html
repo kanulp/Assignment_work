@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ans2</title>
+
+    <style>
+        #container {
+            position: absolute;
+            height: 100%;
+            width: 800px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        p {
+            font-size: 50pt;
+            color: blue;
+        }
+        
+        body {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p id="num">10</p>
+    </div>
+    <script>
+        var num = 10;
+        var color = ["Colors",
+            "Red",
+            "Blue",
+            "Purple",
+            "Pink",
+            "Brown",
+            "Black",
+            "Green",
+            "Orange"
+        ];
+
+        window.setInterval(
+            function() {
+
+                if (num >= 0) {
+                    document.getElementById("num").innerHTML = num--;
+
+                    while (1) {
+                        var randomIndex1 = Math.floor(Math.random() * color.length);
+                        var randomElement1 = color[randomIndex1];
+
+                        var randomIndex2 = Math.floor(Math.random() * color.length);
+                        var randomElement2 = color[randomIndex2];
+                        console.log("random is : " + randomElement1 + " " + randomElement2);
+
+                        if (randomElement1 == randomElement2) {
+                            break;
+                        } else {
+                            document.body.style.backgroundColor = randomElement1;
+                            document.getElementById('num').style.color = randomElement2;
+                        }
+                    }
+
+                }
+                if (num < 0) {
+                    document.getElementById("num").innerHTML = "Takeoff";
+                }
+            }, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\bin\Debug\DataObjects.dll
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\bin\Debug\DataObjects.pdb
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\bin\Debug\GeoEngine_Workspace.exe
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\bin\Debug\NodaTime.dll
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\bin\Debug\GeoEngine_Workspace.pdb
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\bin\Debug\GeoEngine_Workspace.exe.config
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\bin\Debug\NodaTime.pdb
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\obj\Debug\DataObjects.csprojResolveAssemblyReference.cache
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\obj\Debug\DataObjects.csproj.CoreCompileInputs.cache
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\obj\Debug\DataObjects.dll
+C:\Users\scuba\Documents\Project Z\Project Z\DataObjects\obj\Debug\DataObjects.pdb

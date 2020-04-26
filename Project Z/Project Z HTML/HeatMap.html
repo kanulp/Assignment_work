@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+ <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+<link rel="stylesheet" href="css_files/foundation.css" /> 
+ <link rel="stylesheet" href="css_files/app.css" /> 
+ <title>Map Home</title>
+</head>
+
+<body>
+ <header class="header">
+  <h1 class="headline">Zombie Manager</h1>
+  <ul class="header-subnav">
+    <ul class="header-subnav">
+    <li><a href="MapHome.html" id="Markers" class="is-active" runat="server">Markers</a></li>
+    <li><a href="HeatMap.html" id="HeatMap" class="is-active" runat="server">HeatMap</a></li>
+    <li><a href="Overlay.html" id="Overlay" class="is-active" runat="server">Overlay</a></li>
+	<li><a href="KML.html" id="KML" class="is-active" runat="server">KML</a></li>
+	<li><a href="Polylines and Polygons.html" id="Poly" class="is-active" runat="server">Polys</a></li>
+	<li><a href="UserInput.html" id="UserInput" class="is-active" runat="server">Polys</a></li>
+  </ul>
+  </ul>
+</header>
+
+
+    
+    <div class="grid-frame" id="test">
+		
+		<div class="small-12 colomns">&nbsp;</div>
+        <div class="row" >
+            <div id="LocationHolder" class="small-1 columns" runat="server">
+			<ul ID ="LocationList">
+			</ul >
+                
+            </div>
+            <div class="small-11 columns">
+                <div id="map"></div>
+            </div>
+			
+			
+
+        </div>
+		<script src="javascript_files/vendor/jquery.js"></script>
+        <script src="javascript_files/maps/heatmaps.js"></script>
+        <script src="javascript_files/foundation/foundation.js"></script>
+        <script src="javascript_files/foundation/foundation.reveal.js"></script>
+        <script src="javascript_files/foundation/foundation.topbar.js"></script>
+        
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX6haxPnf_GlOOJLMl4XX-_y9id7NBzh8&libraries=visualization&callback=initMapMarker"> </script>
+        <script>
+            $(document).foundation();
+            $(document).foundation('reveal', 'reflow');  
+			<!--initMapMarker();-->
+        </script>
+		
+</body>
+        
+</html>

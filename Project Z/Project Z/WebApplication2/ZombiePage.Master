@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ZombiePage.master.cs" Inherits="WebApplication2.ZombiePage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+   <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+ <link rel="stylesheet" href="css_files/foundation.css" /> 
+ <link rel="stylesheet" href="css_files/app.css" /> 
+     
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="header">
+  <h1 class="headline">Zombie Manager</h1>
+  <ul class="header-subnav">
+    <li><a href="MapHome.aspx" id="Markers" class="is-active" runat="server">Markers</a></li>
+    <li><a href="HeatMap.aspx" id="HeatMap" runat="server">Heat Map</a></li>
+  </ul>
+</header>
+    <form id="form1" runat="server">
+        <div>
+            <!--You have to add the ClientIDMode attribute on the content place holder.--->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" ClientIDMode="Static">
+            
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

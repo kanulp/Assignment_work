@@ -1,0 +1,4 @@
+#title_area{width:300px;height: 50px;top: 10px;left: 10px;position: absolute;
+background-color:white;padding: 10px;border-radius: 20px;font-family: "Times New Roman", Times, serif;font-size: 40px;text-align:center;color:#18178C;}
+#info_section{width:300px;height: 83%;top: 90px;left: 10px;position: absolute;background-color:white;
+padding: 10px;border-radius: 20px;font-family: "Times New Roman", Times, serif;font-size: 12px;text-align:justify;overflow-y: scroll;}

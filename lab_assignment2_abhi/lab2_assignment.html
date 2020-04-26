@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignemt Lab 2</title>
+</head>
+
+<body>
+    Change No Of Country you can add :
+    <input type="number" id="noOfCountry" name="points" step="1" min="0">
+    <button onclick="changeNoOfCountry()">Change</button>
+    <br/> Enter a country : <input type="text" id="countryText">
+    <br/>
+    <p id="errorLength"></p>
+    <button onclick="addCountry()">Add Country</button>
+    <ol id="myList"></ol>
+    <select id="mySelect">
+    </select>
+    <button onclick="deleteCountry()">Delete Selected Country</button>
+    <br/><button onclick="display()">Display</button>
+    <script>
+        let noOfCountry = 5;
+        var myArray = new Array();
+
+        document.getElementById("noOfCountry").value = noOfCountry;
+
+        function changeNoOfCountry() {
+            noOfCountry = document.getElementById("noOfCountry").value;
+        }
+
+        function addCountry() {
+            let country = document.getElementById('countryText').value;
+            console.log(country);
+            if (myArray.length >= noOfCountry) {
+                displayOrderedCountries();
+                loadCountries();
+                //document.getElementById('errorLength').innerHTML = "Max limit reached";
+            } else {
+                document.getElementById('countryText').value = "";
+                myArray.push(country);
+                console.log(myArray.length);
+                loadCountries();
+            }
+        }
+
+        function loadCountries() {
+
+            var x = document.getElementById("mySelect");
+            x.innerHTML = "";
+            for (i in myArray) {
+                var option = document.createElement("option");
+                option.text = myArray[i];
+                x.add(option);
+            }
+        }
+
+        function displayOrderedCountries() {
+
+            var list = document.getElementById("myList");
+            list.innerHTML = "";
+            myArray.sort();
+            for (var i in myArray) {
+                var anchor = document.createElement("a");
+                //anchor.href = "#";
+                anchor.innerText = myArray[i];
+
+                var elem = document.createElement("li");
+                elem.appendChild(anchor);
+                list.appendChild(elem);
+            }
+
+        }
+
+        function deleteCountry() {
+
+            var x = document.getElementById("mySelect");
+            var country = x.options[x.selectedIndex].value;
+            //var option = document.createElement("option");
+            //option.text = "Kiwi";
+            x.remove(country);
+            myArray.splice(myArray.indexOf(country), 1);
+            loadCountries();
+            displayOrderedCountries();
+            console.log("now array length : " + myArray.length);
+        }
+
+        function display() {
+            loadCountries();
+            displayOrderedCountries();
+            alert(myArray.join('\n'));
+        }
+    </script>
+</body>
+
+</html>

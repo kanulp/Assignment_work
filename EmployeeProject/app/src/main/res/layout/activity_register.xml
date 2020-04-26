@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout  xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Registration Form"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:id="@+id/layout_first_name"
+    android:layout_height="wrap_content">
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="Employee First Name"
+        android:layout_weight="1"
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/edit_text_background"
+        android:hint="first name"
+        android:id="@+id/ed_first_name"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/layout_last_name"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Employee Last Name"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:hint="last name"
+            android:id="@+id/ed_last_name"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/layout_birth_year"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Employee Birth Year"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:hint="birth year"
+            android:inputType="number"
+            android:id="@+id/ed_birth_year"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/layout_monthly_salary"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Monthly Salary"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:hint="monthly salary"
+            android:inputType="number"
+            android:id="@+id/ed_monthly_salary"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/layout_occupation_rate"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Occupation rate"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:hint="occupation rate"
+            android:inputType="number"
+            android:id="@+id/ed_occupation_rate"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/layout_emp_id"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Employee Id"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:hint="Employee ID"
+            android:inputType="number"
+            android:id="@+id/ed_emp_id"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/layout_employee_type"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Employee Type"
+            android:layout_weight="1"
+            />
+        <Spinner
+            android:id="@+id/sp_emp_type"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:entries="@array/emp_type_arrays"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:visibility="visible"
+        android:id="@+id/layout_emp_type_number"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="# bugs"
+            android:id="@+id/txt_emp_type_number"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:hint="number"
+            android:inputType="number"
+            android:id="@+id/ed_emp_type_number"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/layout_vehicle"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Vehicle"
+            android:layout_weight="1"
+            />
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/radio_group_vehicle"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/radio_car"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Car"
+                android:layout_height="wrap_content"/>
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/radio_motorbike"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Motorbike"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/layout_sidecar"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Side Car"
+            android:layout_weight="1"
+            />
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/radio_group_sidecar"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/radio_yes"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Yes"
+                android:layout_height="wrap_content"/>
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/radio_no"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="No"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:visibility="visible"
+        android:id="@+id/layout_car_type"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Car Type"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:hint="car type (hatchback,sedan..)"
+            android:id="@+id/ed_car_type"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:visibility="visible"
+        android:id="@+id/layout_vehicle_model"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Vehicle Model"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:hint="Model"
+            android:id="@+id/ed_vehicle_model"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:visibility="visible"
+        android:id="@+id/layout_plate_number"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Plate Number"
+            android:layout_weight="1"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:hint="Plate number"
+            android:id="@+id/ed_vehicle_plat_number"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:id="@+id/layout_vehicle_color"
+        android:layout_height="wrap_content">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Vehicle Color"
+            android:layout_weight="1"
+            />
+        <Spinner
+            android:id="@+id/sp_vehicle_color"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:entries="@array/vehicle_color_arrays"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_register"
+        android:text="Register"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/mydata"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>

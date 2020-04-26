@@ -1,0 +1,15 @@
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\DataAccessClass.dll
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\DataAccessClass.pdb
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\DataObjects.dll
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\GeoEngine_Workspace.exe
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\NodaTime.dll
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\SITG_DATA_ACCESS_LIBRARY.dll
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\DataObjects.pdb
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\GeoEngine_Workspace.pdb
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\GeoEngine_Workspace.exe.config
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\SITG_DATA_ACCESS_LIBRARY.pdb
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\bin\Release\NodaTime.pdb
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\obj\Release\DataAccessClass.csprojResolveAssemblyReference.cache
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\obj\Release\DataAccessClass.csproj.CoreCompileInputs.cache
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\obj\Release\DataAccessClass.dll
+C:\Users\scuba\Documents\Project Z\Project Z\DataAccessClass\obj\Release\DataAccessClass.pdb
