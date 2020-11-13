@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Grow Diary v3</string>
+    <string name="update_text">UPDATE</string>
+    <string name="db_drop">DROP TABLE IF EXISTS</string>
+    <string name="action_settings">Settings</string>
+    <string name="sure_text">Are you sure?</string>
+    <string name="no_text">No</string>
+    <string name="yes_text">Yes</string>
+    <string name="add_item">Add Diary</string>
+    <string name="save_button">Save</string>
+</resources>
